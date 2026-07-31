@@ -1,16 +1,28 @@
 {
   "destination": [
     {
-      "id": 1,
+      "id": "1",
       "city": "New York",
       "country": "USA",
       "daysNeeded": 3
     },
     {
-      "id": 2,
+      "id": "2",
       "city": "Chicago",
       "country": "USA",
       "daysNeeded": 5
+    },
+    {
+      "id": 57.46725545740146,
+      "city": "TEMP",
+      "country": "USA",
+      "daysNeeded": 9
+    },
+    {
+      "id": 47.4774152055229,
+      "city": "Amman",
+      "country": "Jordan",
+      "daysNeeded": 4
     }
   ]
 }
