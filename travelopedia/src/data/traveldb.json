@@ -13,19 +13,13 @@
       "daysNeeded": 5
     },
     {
-      "id": "57.46725545740146",
-      "city": "TEMP",
-      "country": "USA",
-      "daysNeeded": 9
-    },
-    {
-      "id": "47.4774152055229",
+      "id": "3",
       "city": "Amman",
       "country": "Jordan",
       "daysNeeded": 4
     },
     {
-      "id": 26.40576419679408,
+      "id": 4,
       "city": "ABC",
       "country": "Temp",
       "daysNeeded": 8
