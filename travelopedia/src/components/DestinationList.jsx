@@ -1,35 +1,16 @@
-import {
-  useGetAllDestinationQuery,
-  useDeleteDestinationMutation,
-} from "../api/destinationApi";
+import { useGetAllDestinationQuery } from "../api/destinationApi";
+import Destination from "./Destination";
 
 function DestinationList() {
   const { data, isLoading, isSuccess, isError, error } =
     useGetAllDestinationQuery();
-
-  const [deleteDestination] = useDeleteDestinationMutation();
 
   let content;
   if (isLoading) {
     content = <p>Loading...</p>;
   } else if (isSuccess) {
     content = data.map((destination) => {
-      return (
-        <div className="row py-1 border-top" key={destination.id}>
-          <div className="col-5 offset-1">
-            {destination.city}, {destination.country}
-          </div>
-          <div className="col-2 text-info">{destination.daysNeeded} days</div>
-          <div className="col-3">
-            <button
-              className="btn form-control btn-danger"
-              onClick={() => deleteDestination({ id: destination.id })}
-            >
-              Delete
-            </button>
-          </div>
-        </div>
-      );
+      return <Destination destination={destination} key={destination.id} />;
     });
   } else if (isError) {
     content = <p>{error}</p>;
