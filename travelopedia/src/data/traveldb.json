@@ -13,16 +13,10 @@
       "daysNeeded": 5
     },
     {
-      "id": "3",
+      "id": "5",
       "city": "Amman",
       "country": "Jordan",
-      "daysNeeded": 4
-    },
-    {
-      "id": 4,
-      "city": "ABC",
-      "country": "Temp",
-      "daysNeeded": 8
+      "daysNeeded": 6
     }
   ]
 }
